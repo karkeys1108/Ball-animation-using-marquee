@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ball animation</title>
+    <style>
+     body{
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: rgb(54, 40, 77);
+     }
+     marquee{
+        height: 100vh;
+     }
+     .ball{
+        
+        max-width: 300px;
+        animation: animate 4s linear infinite;
+     }
+     @keyframes animate{
+        0%{
+           transform: rotate(0deg);
+        }
+        100%{
+           transform: rotate(360deg);
+        }
+     }
+    </style>
+</head>
+<body>
+    <section>
+        <marquee behavior="alternate" scrollamount="40">
+            <marquee behavior="alternate" direction="down">
+          <img src="pngimg.com - football_PNG52797.png" class="ball">
+            </marquee>
+        </marquee>
+    </section>
+    
+</body>
+</html>
